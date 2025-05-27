@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import { sequelize } from './config/db';
-import telefonoRoutes from './routes/telefonoRoutes';
 import usuariosRoutes from "./routes/usuariosRoutes";
 import { authenticateToken } from "./middleware/usuarios";
 
@@ -12,7 +11,7 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use('/telefonos', telefonoRoutes);
+
 app.use("/usuarios", usuariosRoutes);
 
 app.get("/perfil", authenticateToken, (req, res) => {

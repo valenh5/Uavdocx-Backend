@@ -1,10 +1,12 @@
-
-
 import { DataTypes } from 'sequelize';
 import { sequelize } from '../config/db';
-//verificar columnas si son iguales a la del sql
 
-export const Usuario = sequelize.define('Usuario', {
+export const Usuario = sequelize.define('Usuarios', {
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true,
+  },
   nombre_usuario: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -13,22 +15,9 @@ export const Usuario = sequelize.define('Usuario', {
   contrasenia: {
     type: DataTypes.STRING,
     allowNull: false,
-
-    field: 'contraseña_hash',
+    //field: 'contraseña_hash', depende de la db
   },
 }, {
-  timestamps: false,  
+  timestamps: true,  //depende de la db tambien
 });
 
-
-export const Usuario = sequelize.define('Usuario', {
-  nombre_usuario: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true,
-  },
-  contrasenia: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-});
