@@ -7,7 +7,16 @@ export const Usuario = sequelize.define('Usuarios', {
     autoIncrement: true,
     primaryKey: true,
   },
+<<<<<<< HEAD
   nombre_usuario: {
+=======
+  usuario: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true,
+  },
+  email: {
+>>>>>>> abmPrenda
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
