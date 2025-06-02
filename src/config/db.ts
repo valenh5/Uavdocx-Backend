@@ -1,6 +1,10 @@
 import { Sequelize } from 'sequelize';
 
+<<<<<<< HEAD
 export const sequelize = new Sequelize('telefono_basedatos', 'alumno', 'alumnoipm', {
+=======
+export const sequelize = new Sequelize('uavdocx', 'root', 'valen3008', {
+>>>>>>> abmPrenda
   host: 'localhost',
   dialect: 'mysql',
 });

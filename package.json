@@ -13,7 +13,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^6.0.0",
+=======
+    "bcrypt": "^5.1.0",
+>>>>>>> abmPrenda
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -23,7 +27,12 @@
     "js-yaml": "^4.1.0",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.0",
+<<<<<<< HEAD
     "sequelize": "^6.37.7"
+=======
+    "sequelize": "^6.37.7",
+    "validator": "^13.15.15"
+>>>>>>> abmPrenda
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
@@ -32,6 +41,10 @@
     "@types/js-yaml": "^4.0.9",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/node": "^22.14.1",
+<<<<<<< HEAD
+=======
+    "rimraf": "^6.0.1",
+>>>>>>> abmPrenda
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }
